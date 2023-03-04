@@ -53,7 +53,7 @@ class Home extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () {},
-        label: const Text('Forgot Password'),
+        label: const Text('Forgot Password ?'),
         icon: const Icon(
           Icons.assistant,
           color: Colors.amber,
