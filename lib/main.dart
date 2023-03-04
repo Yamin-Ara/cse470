@@ -28,20 +28,23 @@ class Home extends StatelessWidget {
               hintText: 'Password',
             ),
           ),
-          Center(
-            child: ElevatedButton(
-              onPressed: () {
-                const snackBar =
-                    SnackBar(content: const Text('Sign up form coming soon'));
-                ScaffoldMessenger.of(context).showSnackBar(snackBar);
-              },
-              child: Text(
-                'Sign up now',
-                style: TextStyle(
-                  fontSize: 24.0,
-                  fontWeight: FontWeight.bold,
-                  letterSpacing: 2.0,
-                  color: Colors.blue.shade900,
+          Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: Center(
+              child: ElevatedButton(
+                onPressed: () {
+                  const snackBar =
+                      SnackBar(content: const Text('Sign up form coming soon'));
+                  ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                },
+                child: Text(
+                  'Sign up',
+                  style: TextStyle(
+                    fontSize: 24.0,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 2.0,
+                    color: Colors.blue.shade900,
+                  ),
                 ),
               ),
             ),
@@ -65,7 +68,7 @@ class Home extends StatelessWidget {
       padding: EdgeInsets.all(80),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
+        children: <Widget>[
           Text(
             'About Us',
             style: TextStyle(
@@ -85,6 +88,7 @@ class Home extends StatelessWidget {
             ),
           ),
           SizedBox(height: 16),
+          Container()
         ],
       ));
 }
